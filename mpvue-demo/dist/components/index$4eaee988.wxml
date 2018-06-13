@@ -1,0 +1,33 @@
+<import src="card$1b77111b" />
+<import src="big-card$377e7470" />
+<template name="index$4eaee988">
+  <view class="_div data-v-0d53d50b container">
+    <view class="_div data-v-0d53d50b column">
+      <template text="0" data="{{...$root[$kk+'0'], $root}}" is="card$1b77111b"></template>
+      <template text="1/2" data="{{...$root[$kk+'1'], $root}}" is="card$1b77111b"></template>
+      <template text="1" data="{{...$root[$kk+'2'], $root}}" is="card$1b77111b"></template>
+    </view>
+    <view class="_div data-v-0d53d50b column">
+      <template text="2" data="{{...$root[$kk+'3'], $root}}" is="card$1b77111b"></template>
+      <template text="3" data="{{...$root[$kk+'4'], $root}}" is="card$1b77111b"></template>
+      <template text="5" data="{{...$root[$kk+'5'], $root}}" is="card$1b77111b"></template>
+    </view>
+    <view class="_div data-v-0d53d50b column">
+      <template text="8" data="{{...$root[$kk+'6'], $root}}" is="card$1b77111b"></template>
+      <template text="13" data="{{...$root[$kk+'7'], $root}}" is="card$1b77111b"></template>
+      <template text="20" data="{{...$root[$kk+'8'], $root}}" is="card$1b77111b"></template>
+    </view>
+    <view class="_div data-v-0d53d50b column">
+      <template text="40" data="{{...$root[$kk+'9'], $root}}" is="card$1b77111b"></template>
+      <template text="100" data="{{...$root[$kk+'10'], $root}}" is="card$1b77111b"></template>
+      <template text="∞" data="{{...$root[$kk+'11'], $root}}" is="card$1b77111b"></template>
+    </view>
+    <view class="_div data-v-0d53d50b column">
+      <template text="?" data="{{...$root[$kk+'12'], $root}}" is="card$1b77111b"></template>
+      <template text="Zzz" data="{{...$root[$kk+'13'], $root}}" is="card$1b77111b"></template>
+    </view>
+    <view wx:if="{{showBigOne}}" class="_div data-v-0d53d50b big-one-container">
+      <template data="{{...$root[$kk+'14'], $root}}" is="big-card$377e7470"></template>
+    </view>
+  </view>
+</template>

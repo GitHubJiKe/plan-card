@@ -1,0 +1,6 @@
+<template name="big-card$377e7470">
+  <view wx:if="{{show}}" class="_div data-v-c97e5052 big-card animated zoomIn" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+    <label class="_label data-v-c97e5052">{{text}}</label>
+  </view>
+  <view wx:else class="_div data-v-c97e5052 big-card-noshow animated zoomIn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"> ? </view>
+</template>

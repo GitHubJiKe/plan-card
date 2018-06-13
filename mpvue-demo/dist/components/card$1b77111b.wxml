@@ -1,0 +1,3 @@
+<template name="card$1b77111b">
+  <view class="_div data-v-1ab882aa card" bindtap="handleProxy" data-text="{{text}}" data-eventid="{{'0'}}" data-comkey="{{$k}}"> {{text}} </view>
+</template>

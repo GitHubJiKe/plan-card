@@ -1,0 +1,7 @@
+
+  <view class="container _97141c8">
+    <text class="_97141c8">姓名：{{name}}</text>
+    <text class="_97141c8">年龄：{{age}}</text>
+    <text class="_97141c8">asyncText:{{asyncText}}</text>
+    <button bindtap="showToast" class="_97141c8">Toast</button>
+  </view>

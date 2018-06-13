@@ -1,0 +1,12 @@
+
+.card {
+  display: inline-block;
+  width: 20%;
+  height: 200rpx;
+  padding: 20rpx;
+  border: 6rpx solid antiquewhite;
+  border-radius: 6rpx;
+  text-align: center;
+  line-height: 200rpx;
+  font-size: 35pt;
+}
