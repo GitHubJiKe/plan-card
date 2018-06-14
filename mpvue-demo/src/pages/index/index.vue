@@ -1,28 +1,19 @@
 <template>
   <div class="container">
     <div class="column">
-      <card text="0" :showBig="showBig"/>
-      <card text="1/2" :showBig="showBig"/>
-      <card text="1" :showBig="showBig"/>
+      <card v-for="(text,idx) in array1" :text="text" :key="idx" :showBig="showBig"/>
     </div>
     <div class="column">
-      <card text="2" :showBig="showBig"/>
-      <card text="3" :showBig="showBig"/>
-      <card text="5" :showBig="showBig"/>
+      <card v-for="(text,idx) in array2" :text="text" :key="idx" :showBig="showBig"/>
     </div>
     <div class="column">
-      <card text="8" :showBig="showBig"/>
-      <card text="13" :showBig="showBig"/>
-      <card text="20" :showBig="showBig"/>
+      <card v-for="(text,idx) in array3" :text="text" :key="idx" :showBig="showBig"/>
     </div>
     <div class="column">
-      <card text="40" :showBig="showBig"/>
-      <card text="100" :showBig="showBig"/>
-      <card text="∞" :showBig="showBig"/>
+      <card v-for="(text,idx) in array4" :text="text" :key="idx" :showBig="showBig"/>
     </div>
     <div class="column">
-      <card text="?" :showBig="showBig"/>
-      <card text="Zzz" :showBig="showBig"/>
+      <card v-for="(text,idx) in array5" :text="text" :key="idx" :showBig="showBig"/>
     </div>
     <div v-if="showBigOne" class="big-one-container">
       <bigcard :text="text" :onClick="closeCard"/>
@@ -38,14 +29,39 @@ export default {
   data () {
     return {
       text: '',
-      showBigOne: false
+      showBigOne: false,
+      array1: [
+        '0',
+        '1/2',
+        '1'
+      ],
+      array2: [
+        '2',
+        '3',
+        '5'
+      ],
+      array3: [
+        '8',
+        '13',
+        '20'
+      ],
+      array4: [
+        '40',
+        '100',
+        '∞'
+      ],
+      array5: [
+        '?',
+        'Zzz'
+      ]
     }
   },
   methods: {
     showBig: function (params) {
-      console.log('show big', params)
-      this.text = params
-      this.showBigOne = true
+      if (!this.showBigOne) {
+        this.text = params
+        this.showBigOne = true
+      }
     },
     closeCard: function (params) {
       this.showBigOne = false
@@ -54,7 +70,8 @@ export default {
   components: {
     card,
     bigcard
-  }
+  },
+  onShareAppMessage () {}
 }
 </script>
 
