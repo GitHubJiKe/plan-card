@@ -42,7 +42,7 @@ export default {
   .big-card{
     width: 100%;
     height: 1000rpx;
-    background-color: #1e35e4;
+    background-color: #1aad19;
     border-radius: 20rpx;
     margin: 20rpx;
     text-align: center;
@@ -53,7 +53,7 @@ export default {
   .big-card-noshow{
     width: 100%;
     height: 1000rpx;
-    background-color: antiquewhite;
+    background-color: #1e35e4;
     margin: 20rpx;
     border-radius: 20rpx;
     text-align: center;

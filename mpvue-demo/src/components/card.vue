@@ -39,10 +39,10 @@ export default {
   width: 20%;
   height: 100px;
   padding: 10px;
-  border: 3px solid antiquewhite;
+  border: 3px solid #1aad19;
   border-radius: 3px;
   text-align: center;
   line-height: 100px;
-  font-size: 35pt;
+  font-size: 30pt;
 }
 </style>
